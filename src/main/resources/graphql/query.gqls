@@ -1,0 +1,15 @@
+type Query {
+  # just for test
+  testA: String
+  # just for test
+  getEveryThing: String
+
+  # find all user list. you can use this function when you want the whole list.
+  findAllUsers: [User]
+  # find all product list. there is no need for any of arguments.
+  findAllProducts: [Product]
+  # find all order list. just request it.
+  findAllOrders: [Order]
+  # Aggregated 주문 정보
+  findAllAggregatedOrders: [OrderInfo]
+}

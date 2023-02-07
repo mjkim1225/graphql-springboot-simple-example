@@ -1,0 +1,39 @@
+type User {
+  # user's unique id.
+  id: ID!
+  # user's email.
+  email: String
+  # user's full name.
+  name: String
+  # user's mobile number.
+  tel: String
+}
+
+type Product {
+  # product's unique id.
+  id: ID!
+  # product's unique number.
+  no: String
+  # product's name.
+  name: String
+}
+
+type Order {
+  # order's unique id.
+  id: ID!
+  # id for a user who ordered.
+  userId: ID
+  # id for a product which is ordered.
+  productId: ID
+}
+
+# 주문 정보
+type OrderInfo {
+  # 주문 ID
+  orderId: ID
+  # 사용자 정보
+  user: User
+  # 제품 정보
+  product: Product
+}
+

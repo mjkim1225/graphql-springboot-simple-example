@@ -1,0 +1,12 @@
+type Mutation {
+  # 새로운 제품 입력하기
+  # no: 제품번호
+  # name: 제품명
+  insertNewProduct(no: String, name: String): Product
+  # 제품명 변경하기
+  updateProductName(id: ID, name: String): Product
+  # 제품 삭제
+  deleteProduct(id: ID): String
+}
+
+
